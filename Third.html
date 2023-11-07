@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+   <meta charset="utf-8">
+   <meta name="author" content="Зубко Дарина Євгенівна">
+   <meta name="description" content="Приклад веб-сторінки">
+   <meta name="keywords" content="веб-сторінка, розробка, HTML-посібник">
+   <title>Про мене</title>
+   <style>
+    * {
+       margin: 0;
+       padding: 0;
+       box-sizing: border-box;
+       font-family: sans-serif;
+       list-style: none;
+       text-decoration:none;
+    }
+
+    body {
+       height: 100vh;
+       background: url(https://cdn.pixabay.com/photo/2016/01/08/17/06/poppy-1128683_1280.jpg) no-repeat;
+       background-size: cover;
+       background-position: center;
+       overflow: hidden;
+
+    }
+
+    header {
+ position: fixed;
+ left: 0;
+ right: 0;
+ top: 0;
+ background: rgba(255, 255, 255, 0.9); /* Додавання прозорого фону */
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 0 8%;
+ /* Встановлення значення z-index, щоб забезпечити вищий шар */
+}
+
+    header .logo {
+       color: rgba(137, 43, 226, 0.824); 
+       font-size: 26px;
+    }
+    header nav ul li{
+       position: relative;
+       float: left;
+    
+    }
+    header nav ul li a {
+     padding: 20px;
+     color: rgba(137, 43, 226, 0.824);
+     font-size: 20px;
+     display: block;
+    }
+    header nav ul li a:hover {
+       background: #dc2ce8;
+    color: #fff;
+    }
+    
+    img {
+  border-radius: 50%;
+  width: 230px; /* Змініть це значення на бажаний розмір ширини */
+  height: 230px; /* Змініть це значення на бажаний розмір висоти */
+  object-fit: cover;
+  object-position: top;
+  margin-top: 30px; /* Додайте вертикальний зсув вниз */
+  margin-left: 40px; /* Зсунути зображення ліворуч на -10px */
+
+}
+
+img:hover {
+  transform: translateX(20px); /* Змініть це значення на бажаний зсув вправо */
+  transform: scale(1.3);
+  cursor: pointer; 
+}
+
+figure {
+        display: inline-block;
+        margin: 10px;
+
+    }
+    figcaption{
+        margin-top: 5px; /* Додайте вертикальний відступ між фото і підписом */
+        /* Лівий відступ */
+    text-align: center    
+   }
+   .title {
+    color: transparent;    
+	-webkit-background-clip: text;
+	background-clip: text;
+	background-image: linear-gradient(  #d13ace ,hwb(308 26% 13%) 38%, rgb(220, 68, 151),rgb(228, 89, 193), rgb(238, 113, 238), #d341d0 65% );
+        text-align: center;
+        margin-top: 80px; /* Додайте вертикальний відступ вниз */
+     }
+
+  button {
+         background-color: #dc2ce8;
+         color: #fff;
+         padding: 15px 30px;
+         border: none;
+         border-radius: 5px;
+         font-size: 18px;
+         cursor: pointer;
+         margin-top: 20px; /* Відступ зверху */
+         margin-bottom: 20px; /* Відступ знизу */
+      }
+
+      .button:hover {
+         background-color: rgba(137, 43, 226, 0.824);
+      }
+         .button-container {
+         text-align: center;
+      }
+
+      figcaption {
+        position: absolute;
+        bottom: -100%;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        color: #fff;
+        text-align: center;
+        transition: bottom 0.3s ease-in-out;
+        padding: 10px;
+        opacity: 0;
+        pointer-events: none; /* Перешкоджає спрацьовуванню подій на елементі при хованні */
+    }
+
+    figure:hover figcaption {
+        bottom: 0;
+        opacity: 1;
+        pointer-events: auto; /* Відновити обробку подій при наведенні */
+    }
+ </style>
+</head>
+<body>
+ <header>
+    <a href="#" class="logo">Lab2</a>
+
+    <nav>
+       <ul>
+         <li><a href="https://zubkodaryna.github.io/test/">About me</a></li>
+         <li><a href="https://zubkodaryna.github.io/test/Second2.html#">Pharmacy's history</a></li>
+         <li><a href="file:///C:/Users/%D0%90%D0%B4%D0%BC%D0%B8%D0%BD/github-classroom/VLazorykOOP/weblab1-ZubkoDaryna/Lab2/Third.html">Pharmacy</a></li>
+       </ul>
+    </nav>
+ </header>
+
+ <h1 class="title">Аптека "Ельфійська Формула Здоров'я"</h1>
+
+
+ <figure>
+    <img src="https://cdn.pixabay.com/photo/2015/12/06/18/28/capsules-1079838_1280.jpg" alt="Фото 1">
+    <figcaption alight-ite><b>Вітаміни та мінерали:<br>-Вітамін С<br>-Super Nutrition, комплекс вітамінів групи В<br>-NOW Foods, рідкий вітамін D3<br>-Aurora Nutrascience, Mega-Liposomal Vitamin C</b></figcaption>
+</figure>
+
+<figure>
+    <img src="https://cdn.pixabay.com/photo/2015/12/12/14/57/giant-rubber-bear-1089612_1280.jpg" alt="Фото 2">
+    <figcaption><b>Товари для дітей:<br>-Підгуски та сповивання<br>-Харчування та годумання<br>-Гігієна та догляд за дитиною<br>-Конструктор Lego<br>-Товари для мам<br></b></figcaption>
+</figure>
+
+<figure>
+    <img src="https://cdn.pixabay.com/photo/2018/11/20/16/43/laboratory-3827736_1280.jpg" alt="Фото 3">
+    <figcaption><b>Медична техніка<br>-Рукавички:<br>-Маски<br>-Термометри<br>-Тонометри<br>-Інгалятори<br>-Устілки ортопедичні</b></figcaption>
+</figure>
+
+<figure>
+    <img src="https://cdn.pixabay.com/photo/2016/07/24/21/01/thermometer-1539191_1280.jpg" alt="Фото 4">
+    <figcaption><b>Ліки та профілактичні засоби:<br>-Терафлю Екстра<br>-Тантум Верде<br>-Антиперспірант<br>-Терафлю від грипу<br>-Крем для фіксації зубних протезів<br>-Вольтарен Емульгель</b></figcaption>
+</figure>
+
+<figure>
+    <img src="https://cdn.pixabay.com/photo/2020/04/02/05/19/beauty-4993472_1280.jpg" alt="Фото 5">
+    <figcaption><b>Краса та догляд:<br>-Очищувальний гель-мус La Roche-Posay Effaclar<br>-Сироватка для обличчя It's Skin Power 10 Formula VC Effector<br>-Міцелярна вода Garnier Skin Naturals-Патчі для зони під очима Prreti Moisture Aloe Eye Zone Mask Pack Алое</b></figcaption>
+</figure>
+
+<br>
+
+<div class="button-container">
+<button class="button" style="vertical-align:middle"><span>Хочу зробити замовлення</span></button>
+</div>
+
+<h2 align="center" style="clear:both">НЕ ВИТРАЧАЙТЕ ЗАЙВОГО - КУПУЙТЕ У НАС!</h2>
+<br>
+<br>
+<h2>Додаткова інформація:</h2>
+        <p><b>Ці препарати є надзвичайно <del>безкорисними</del> важливими для вашого фізичного та психічного здоров'я, а також для вашого загального самопочуття і життєвого комфорту. 
+            Ретельно обдумайте інструкції щодо їх використання та зверніться до вашого лікаря або фармацевта перед тим, як розпочати прийом будь-якого із цих препаратів. 
+            Здоров'я завжди є вашим найбільшим скарбом, і правильна діагностика та лікування грають ключову роль у його збереженні.</b></p>
+
+            <section id="contact">
+                <h2><b>Контакти</b></h2>
+                <p><b>Адреса: Глибока долина, Волхвів вул., 13</b></p>
+                <p><b>Телефон: +380123456789</b></p>
+                <p><b>Email: info@elfish.health.formula.com</b></p>
+             </section>
+          
+             <footer>
+                <p>&copy; <b>2023 Аптека "Ельфійська Формула Здоров'я"</b></p>
+             </footer>
+ 
+ 
+</body>
+</html>
