@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+   <meta charset="utf-8">
+   <meta name="author" content="Зубко Дарина Євгенівна">
+   <meta name="description" content="Приклад веб-сторінки">
+   <meta name="keywords" content="веб-сторінка, розробка, HTML-посібник">
+   <title>About me</title>
+   <style>
+      * {
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+         font-family: sans-serif;
+         list-style: none;
+         text-decoration:none;
+
+      }
+
+      body {
+         height: 100vh;
+         background: url(https://cdn.pixabay.com/photo/2014/12/04/14/46/magnolia-trees-556718_1280.jpg) no-repeat;
+         background-size: cover;
+         background-position: center;
+      }
+
+      header {
+   position: fixed;
+   left: 0;
+   right: 0;
+   top: 0;
+   background: rgba(255, 255, 255, 0.9); /* Додавання прозорого фону */
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0 8%;
+   z-index: 1;
+}
+
+      header .logo {
+         color: rgba(137, 43, 226, 0.824); 
+         font-size: 26px;
+      }
+      header nav ul li{
+         position: relative;
+         float: left;
+      
+      }
+      header nav ul li a {
+       padding: 20px;
+       color: rgba(137, 43, 226, 0.824);
+       font-size: 20px;
+       display: block;
+      }
+      header nav ul li a:hover {
+         background: #dc2ce8;
+      color: #fff;
+      }
+      
+      .main {
+         display: flex;
+         align-items:center;
+         height:40vh;
+         padding: 0 25%; /* Залишити відступи по боках */
+         color: black; 
+         font-size: 24px;
+      }   
+     .centered {
+   text-align: center;  
+}
+img {
+  border-radius: 50%;
+  width: 230px; 
+  height: 230px; 
+  object-fit: cover;
+  object-position: top;
+  margin-top: 20px; 
+  margin-left: 15px; 
+
+}
+
+img:hover {
+  transform: scale(1.3); /* збільшує зображення*/
+  cursor: pointer; 
+}
+
+   </style>
+</head>
+<body>
+   <header>
+      <a href="#" class="logo">Lab2</a>
+
+      <nav>
+         <ul>
+            <li><a href="Lab2.html">About me</a></li>
+            <li><a href="Second2.html#">Pharmacy's history</a></li>
+            <li><a href="file:///C:/Users/%D0%90%D0%B4%D0%BC%D0%B8%D0%BD/github-classroom/VLazorykOOP/weblab1-ZubkoDaryna/Lab2/Third.html">Pharmacy</a></li>
+         </ul>
+      </nav>
+   </header>
+
+   <h1 class="centered" style="margin-top: 70px;">Hi. I'm Daryna Zubko</h1>
+   <h2 class="centered" style="margin-top: 20px;">I'm a student and now I am nineteen</h2>
+   
+<img src="https://images.unsplash.com/photo-1565711561500-49678a10a63f?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"/> 
+<img src="https://images.unsplash.com/photo-1529655683826-aba9b3e77383?auto=format&fit=crop&q=80&w=1965&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"/> 
+<img src="https://cdn.pixabay.com/photo/2023/07/31/13/42/anime-art-8161031_1280.png"/> 
+<img src="https://cdn.pixabay.com/photo/2023/08/18/16/37/ai-generated-8198911_640.png"/> 
+<img src="https://cdn.pixabay.com/photo/2014/08/16/18/17/book-419589_640.jpg"/> 
+<img src="https://cdn.pixabay.com/photo/2015/09/23/22/56/dog-954520_640.jpg"/> 
+   <section class="main">
+      <div class="home-content">
+         
+         <p>
+            &nbsp;&nbsp;&nbsp;I am a student of Chernivtsi National University, second year. I study in the specialty "Computer Science".
+            I have two main passions in my life - fantasy and sports. It seems that these are incompatible things,
+            but for me it became part of my life path. 
+         </p>
+         <p>
+            &nbsp;&nbsp;&nbsp; When I am engrossed in the world of fantasy, I forget about time and space. 
+            Magic, adventure, fictional worlds and heroes - all this makes every page of the book an incredible journey. 
+            Fantasy helps me relax after a busy study and enjoy imaginary worlds where anything is possible.
+         </p>
+      </div>
+
+   </section>
+   <p>Поточна URL-адреса: <span id="current-url"></span></p>
+
+   <script>
+      document.getElementById("current-url").textContent = window.location.href;
+   </script>
+</body>
+</html>
